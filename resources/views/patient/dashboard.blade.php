@@ -1,4 +1,4 @@
-@extends('masters.index')
+@extends('patient.index')
 @section('content')
 <div class="container-fluid">
   <!-- Page Heading -->
