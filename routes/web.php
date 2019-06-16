@@ -28,9 +28,7 @@ Route::group(['prefix' => '/patient'], function(){
  * Route for Patient Dashboard
  */
 Route::group(['prefix' => '/patient', 'middleware' => ['patient.loggedIn']], function(){
-    Route::get('/profile', function(){
-        return view('patient.profile')->with('title', 'Profile');
-    });
+    Route::get('/profile', 'Patient\ProfileControl@index')->name('patient.profile');
 });
 
 Route::get('/login-doctor', function () {
