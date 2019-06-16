@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('masters.blank')->with('title', 'Dashboard');
 });
+
+Route::get('/login-patient', function () {
+    return view('login-patient');
+} );
+
+Route::get('/login-doctor', function () {
+    return view('login-doctor');
+});
